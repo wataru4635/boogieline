@@ -1,0 +1,39 @@
+@use "global" as *;
+
+.float-btn {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  translate: -50% 0;
+  width: 100%;
+  z-index: var(--z-index-float-btn);
+  opacity: 0;
+  transition: opacity var(--duration-base) ease, visibility var(--duration-base) ease, pointer-events var(--duration-base) ease;
+  will-change: opacity;
+  pointer-events: none;
+  visibility: hidden;
+  &.is-scroll {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+  }
+  @include mq('md') {
+  display: none;
+  }
+}
+
+.float-btn__link {
+  display: block;
+font-size: 18.36px;
+font-weight: var(--font-weight-semibold);
+line-height: 1.58824;
+letter-spacing: calc(0.54 / 18.36 * 1em);
+width: 95%;
+margin-inline: auto;
+padding-block: rem(12);
+border-radius: 30px;
+text-align: center;
+background: var(--main-orange);
+box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+max-width: 500px;
+}

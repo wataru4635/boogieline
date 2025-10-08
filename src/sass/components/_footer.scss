@@ -1,0 +1,119 @@
+@use "global" as *;
+
+.footer {
+  background-color: var(--main-blue);
+  padding-block: rem(40) rem(48);
+  @include mq('md') {
+    padding-block: rem(70) rem(80);
+  }
+}
+
+.footer.footer--top {
+  padding-block: rem(40) rem(88);
+  @include mq('md') {
+    padding-block: rem(70) rem(80);
+  }
+}
+
+.footer__inner {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding-inline: rem(18);
+max-width: 450px;
+margin-inline: auto;
+@include mq('md') {
+max-width: 530px;
+padding-inline: rem(15);
+}
+}
+
+.footer__sns-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: center;
+  gap: rem(20);
+@include mq('md') {
+gap: rem(25);
+}
+}
+
+.footer__sns-item {
+  display: block;
+  aspect-ratio: 1 / 1;
+}
+
+.footer__sns-link {
+  display: block;
+  aspect-ratio: 1 / 1;
+  background-color: var(--white);
+  border-radius: calc(infinity * 1px);
+  padding: rem(12);
+  transition: opacity var(--duration-base) ease;
+  @include mq('md') {
+    padding: rem(18);
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.footer__img {
+  height: auto;
+  object-fit: contain;
+  aspect-ratio: 1 / 1;
+}
+
+.footer__links {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+ gap: rem(5);
+ margin-top: rem(30);
+ @include mq('md') {
+  gap: rem(10);
+  margin-top: rem(35);
+ }
+}
+
+.footer__links-link {
+  color: var(--white);
+  text-align: center;
+  font-size: rem(12);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.5;
+  letter-spacing: calc(0.5 / 12 * 1em);
+  transition: opacity var(--duration-base) ease;
+  @include mq('md') {
+    font-size: rem(15);
+    letter-spacing: calc(0.5 / 15 * 1em);
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.footer__logo-wrap {
+width: 70.5%;
+margin-inline: auto;
+margin-top: rem(33);
+transition: opacity var(--duration-base) ease;
+@include mq('md') {
+  width: 83%;
+  margin-top: rem(40);
+}
+@media (any-hover: hover) {
+  &:hover {
+    opacity: 0.7;
+  }
+}
+}
+
+.footer__logo-img {
+  height: auto;
+  object-fit: contain;
+}

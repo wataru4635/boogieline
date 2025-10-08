@@ -1,0 +1,122 @@
+@use "global" as *;
+
+.goods {
+  background-color: var(--main-orange);
+  color: var(--black);
+  padding-block: rem(60);
+
+  @include mq('md') {
+    padding-block: rem(90) rem(100);
+  }
+}
+
+.goods__inner.inner {
+  @include mq('md') {
+    max-width: 870px;
+  }
+}
+
+.goods__lead {
+  text-align: center;
+  font-size: rem(19);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.57895;
+  letter-spacing: calc(0.5 / 19 * 1em);
+  margin-top: rem(29);
+  @include mq('md') {
+font-size: rem(25.14);
+letter-spacing: calc(0.662 / 25.14 * 1em);
+    margin-top: rem(40);
+  }
+}
+
+.goods__text {
+  font-size: rem(15);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.86667;
+  letter-spacing: calc(0.5 / 15 * 1em);
+  margin-top: rem(14);
+  @include mq('md') {
+font-size: rem(18);
+line-height: 1.88889;
+letter-spacing: calc(1 / 18 * 1em);
+    margin-top: rem(40);
+  }
+}
+
+.goods__items {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(34);
+  gap: rem(27);
+  @include mq('md') {
+  gap: rem(40);
+  }
+}
+
+.goods__img-wrap {
+  margin-inline: auto;
+  @include mq('md') {
+  max-width: rem(445);
+  }
+}
+
+.goods__img {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+}
+
+.goods__caption {
+  font-size: rem(12);
+  font-weight: var(--font-weight-regular);
+  line-height: 2.33333;
+  letter-spacing: calc(0.5 / 12 * 1em);
+  margin-top: rem(6);
+  @include mq('md') {
+    font-size: rem(15);
+    line-height: 1.86667;
+    letter-spacing: calc(1 / 15 * 1em);
+    margin-top: rem(10);
+    margin-inline: auto;
+    max-width: rem(445);
+  }
+}
+
+.goods__item--sticker {
+  @include mq('md') {
+    display: none;
+  }
+}
+
+.goods__btn-wrap {
+  margin-top: rem(31);
+  text-align: center;
+
+  @include mq('md') {
+    margin-top: rem(40);
+  }
+}
+
+.goods__btn {
+  font-size: rem(18);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1;
+  letter-spacing: 1px;
+  background: var(--white);
+  border-radius: calc(infinity * 1px);
+  padding: rem(18) rem(51);
+  transition: background-color var(--duration-base) ease, color var(--duration-base) ease;
+  @include mq('md') {
+    font-size: rem(24.373);
+    letter-spacing: calc(1.354 / 24.373 * 1em);
+    padding: rem(20) rem(69);
+    min-width: 399px;
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      background-color: var(--main-blue);
+      color: var(--white);
+    }
+  }
+}

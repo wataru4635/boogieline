@@ -1,0 +1,28 @@
+@use "global" as *;
+
+.link-more {
+  color: var(--black);
+  text-align: center;
+  font-size: rem(16);
+  font-weight: var(--font-weight-normal);
+  line-height: 1.6875;
+  letter-spacing: 1px;
+  transition: opacity var(--duration-base) ease;
+  @include mq('md') {
+font-size: rem(20);
+line-height: 1.7;
+letter-spacing: calc(1.259 / 20 * 1em);
+  }
+  @media (any-hover: hover) {
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+}
+
+.link-more.link-more--fv {
+  font-size: calc((#{"16 * 100"} / var(--cq-ref-mobile) * 1cqw));
+  @include mq('md') {
+    font-size: calc((#{"20 * 100"} / var(--cq-ref) * 1cqw));
+  }
+}

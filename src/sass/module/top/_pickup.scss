@@ -1,0 +1,105 @@
+@use "global" as *;
+
+.pickup {
+  background-color: var(--bg-pink);
+  padding-block: rem(60);
+  @include mq('md') {
+    padding-block: rem(66.5);
+  }
+}
+
+.pickup__list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: rem(32) rem(20);
+  margin-top: rem(46);
+
+  @include mq('md') {
+    grid-template-columns: repeat(4, 1fr);
+    gap: rem(33);
+    margin-top: rem(60);
+  }
+}
+
+.pickup__link {
+  display: block;
+  height: 100%;
+  transition: opacity var(--duration-base) ease;
+  @media (any-hover: hover) {
+    &:hover .pickup__img {
+      transform: scale(1.05);
+    }
+    &:hover .pickup__content-title {
+      color: var(--main-blue);
+    }
+  }
+}
+
+.pickup__img-wrap {
+  position: relative;
+  border-radius: 20px;
+}
+
+.pickup__img {
+  height: auto;
+  object-fit: cover;
+  aspect-ratio: 1 / 1;
+  border-radius: 20px;
+  transition: transform var(--duration-base) ease;
+  will-change: transform;
+}
+
+.pickup__img-wrap-new {
+  position: absolute;
+  top: rem(-20);
+  left: 0;
+  width: rem(55);
+  @include mq('md') {
+  top: rem(-56);
+  width: rem(95);
+  }
+}
+
+.pickup__img-new {
+  aspect-ratio: 1 / 1;
+  object-fit: contain;
+  height: auto;
+}
+
+
+.pickup__content {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(20);
+  @include mq('md') {
+  margin-top: rem(25);
+  }
+}
+
+.pickup__content-title {
+  font-size: rem(15);
+  font-family: var(--font-family-second);
+  font-weight: var(--font-weight-regular);
+  line-height: 1.33333;
+  letter-spacing: calc(0.5 / 15 * 1em);
+  transition: color var(--duration-base) ease;
+  @include mq('md') {
+    font-size: rem(18);
+    line-height: 1.5;
+    letter-spacing: calc(0.5 / 18 * 1em);
+  }
+}
+
+.pickup__content-name {
+  font-size: rem(15);
+  font-family: var(--font-family-second);
+  font-weight: var(--font-weight-semibold);
+  line-height: 1.33333;
+  letter-spacing: calc(0.5 / 15 * 1em);
+  margin-top: rem(10);
+  @include mq('md') {
+    font-size: rem(18);
+    line-height: 1.5;
+    letter-spacing: calc(0.5 / 18 * 1em);
+  }
+}

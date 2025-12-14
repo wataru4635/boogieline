@@ -26,21 +26,23 @@ function enqueue_custom_scripts() {
     // トップページ専用JS・CSS
     if (is_front_page()) {
         // Swiper JS
+        $swiper_js = '/js/swiper-bundle.min.js';
         wp_enqueue_script(
             'swiper-js',
-            'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js',
+            "{$asset_uri}{$swiper_js}",
             [],
-            '8.0.0',
+            $get_ver("{$theme_path}/assets{$swiper_js}"),
             true
         );
         
+        // Swiper CSS
+        $swiper_css = '/css/swiper-bundle.min.css';
         wp_enqueue_style(
             'swiper-css',
-            'https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css',
+            "{$asset_uri}{$swiper_css}",
             [],
-            '8.0.0'
+            $get_ver("{$theme_path}/assets{$swiper_css}")
         );
-        
         // トップページ専用JS
         $script = '/js/top.js';
         wp_enqueue_script(
@@ -92,6 +94,16 @@ function enqueue_preload_headers() {
   (function(d) {
     var config = {
       kitId: 'eup2stp',
+      scriptTimeout: 3000,
+      async: true
+    },
+    h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+  })(document);
+</script>
+<script>
+  (function(d) {
+    var config = {
+      kitId: 'tzf7fgm',
       scriptTimeout: 3000,
       async: true
     },

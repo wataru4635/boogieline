@@ -1,6 +1,41 @@
 "use strict";
 
 /* ===============================================
+# ハンバーガーメニュー
+// =============================================== */
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburgerBtns = document.querySelectorAll('.js-hamburger');
+  const pcDrawer = document.querySelector('.pc-drawer');
+  const spDrawer = document.querySelector('.sp-drawer');
+  const body = document.body;
+  if (hamburgerBtns.length > 0) {
+    hamburgerBtns.forEach(btn => {
+      btn.addEventListener('click', () => {
+        // PC/SPどちらかのドロワーが開いているかチェック
+        const isOpen = pcDrawer && pcDrawer.classList.contains('is-open') || spDrawer && spDrawer.classList.contains('is-open');
+        if (!isOpen) {
+          // 開く処理
+          if (pcDrawer) pcDrawer.classList.add('is-open');
+          if (spDrawer) spDrawer.classList.add('is-open');
+          body.classList.add('is-hidden');
+
+          // すべてのハンバーガーボタンにis-openを追加
+          hamburgerBtns.forEach(otherBtn => otherBtn.classList.add('is-open'));
+        } else {
+          // 閉じる処理
+          if (pcDrawer) pcDrawer.classList.remove('is-open');
+          if (spDrawer) spDrawer.classList.remove('is-open');
+          body.classList.remove('is-hidden');
+
+          // すべてのハンバーガーボタンからis-openを削除
+          hamburgerBtns.forEach(otherBtn => otherBtn.classList.remove('is-open'));
+        }
+      });
+    });
+  }
+});
+
+/* ===============================================
 # アニメーション
 // =============================================== */
 document.addEventListener('DOMContentLoaded', () => {

@@ -17,7 +17,7 @@ $padding-sp: 15px;
   --font-family-base: "Noto Sans JP", sans-serif;
   --font-family-second: "Noto Sans", "Noto Sans JP", sans-serif;
   --font-family-third: "gill-sans-nova", "Noto Sans", "Noto Sans JP", sans-serif;
-  --font-family-fourth: "dnp-shuei-gothic-gin-std", "Noto Sans", "Noto Sans JP", sans-serif;
+  --font-family-fourth: "dnp-shuei-gothic-kin-std", sans-serif;
 }
 // ※検証ツールでしっかり反映されているか確認する
 
@@ -43,6 +43,7 @@ $padding-sp: 15px;
   --main-pink: #F9B1BF;
   --main-beige: #DFDBBB;
   --main-green: #428B8D;
+  --main-white: #F9F9F9;
   --bg-pink: rgba(249, 177, 191, 0.40);
   --bg-beige: rgba(223, 219, 187, 0.85);
   --bg-green: rgba(66, 139, 141, 0.75);
@@ -59,8 +60,8 @@ $padding-sp: 15px;
   --z-index-opening: 100;
   --z-index-header: 200;
   --z-index-to-top: 200;
-  --z-index-float-btn: 300;
   --z-index-drawer: 1000;
+  --z-index-hamburger: 1001;
   --z-index-modal: 10000;
 }
 

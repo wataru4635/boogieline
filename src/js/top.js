@@ -90,21 +90,3 @@ document.addEventListener('DOMContentLoaded', () => {
 
   sessionStorage.setItem(FLAG, '1');
 });
-
-/* ===============================================
-# TOP：フロートボタン
-=============================================== */
-
-// スクロールイベントの監視
-document.addEventListener('DOMContentLoaded', () => {
-  const floatBtn = document.querySelector('.js-float-btn');
-  if (!floatBtn) return;
-  
-  window.addEventListener('scroll', () => {
-    if (window.scrollY > 50) {
-      floatBtn.classList.add('is-scroll');
-    } else {
-      floatBtn.classList.remove('is-scroll');
-    }
-  });
-});

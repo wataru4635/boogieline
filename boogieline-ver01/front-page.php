@@ -676,12 +676,6 @@
     </div>
   </section>
 
-  <div class="float-btn js-float-btn">
-    <a href="#" class="float-btn__link">
-      会員登録する
-    </a>
-  </div>
-
 </main>
 
 <?php get_footer(); ?>

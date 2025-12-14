@@ -219,8 +219,8 @@ container-type: inline-size;
   }
 }
 
-.top-artist__swiper-button-prev,
-.top-artist__swiper-button-next{
+.top-artist__swiper .top-artist__swiper-button-prev,
+.top-artist__swiper .top-artist__swiper-button-next{
   width: clamp(60px, calc((#{"80 * 100"} / var(--cq-ref) * 1cqw)), 80px);
   top: 30%;
   transform: translateY(-50%);
@@ -239,14 +239,14 @@ container-type: inline-size;
     display: none;
   }
 }
-.top-artist__swiper-button-prev{
+.top-artist__swiper .top-artist__swiper-button-prev{
   right: rem(100);
   left: inherit;
   @media (min-width: 1250px) {
     right: calc((#{"200 * 100"} / var(--cq-ref) * 1cqw));
   }
 }
-.top-artist__swiper-button-next{
+.top-artist__swiper .top-artist__swiper-button-next{
   left: rem(100);
   @media (min-width: 1250px) {
     left: calc((#{"200 * 100"} / var(--cq-ref) * 1cqw));

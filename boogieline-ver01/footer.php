@@ -1,42 +1,56 @@
-<footer class="footer <?php if (is_front_page()): ?>footer--top<?php endif; ?>">
+<footer class="footer">
   <div class="footer__inner">
-    <ul class="footer__sns-list">
-      <li class="footer__sns-item">
-        <a href="#" class="footer__sns-link" aria-label="Facebook">
-            <img src="<?php echo IMAGEPATH; ?>/common/facebook-icon.svg" alt="Facebookのアイコン" width="56" height="56" loading="lazy" class="footer__img">
-        </a>
-      </li>
-      <li class="footer__sns-item">
-        <a href="#" class="footer__sns-link" aria-label="YouTube">
-            <img src="<?php echo IMAGEPATH; ?>/common/youtube-icon.svg" alt="YouTubeのアイコン" width="56" height="56" loading="lazy" class="footer__img">
-        </a>
-      </li>
-      <li class="footer__sns-item">
-        <a href="#" class="footer__sns-link" aria-label="X">
-            <img src="<?php echo IMAGEPATH; ?>/common/x-twitter-icon.svg" alt="Xのアイコン" width="56" height="56" loading="lazy" class="footer__img">
-        </a>
-      </li>
-      <li class="footer__sns-item">
-        <a href="#" class="footer__sns-link" aria-label="Instagram">
-            <img src="<?php echo IMAGEPATH; ?>/common/instagram-icon.svg" alt="Instagramのアイコン" width="56" height="56" loading="lazy" class="footer__img">
-        </a>
-      </li>
-      <li class="footer__sns-item">
-        <a href="#" class="footer__sns-link" aria-label="Spotify">
-            <img src="<?php echo IMAGEPATH; ?>/common/spotify-icon.svg" alt="Spotifyのアイコン" width="56" height="56" loading="lazy" class="footer__img">
-        </a>
-      </li>
-    </ul>
+    <div class="footer__content">
+      <div class="footer__top">
+        <nav class="footer__nav">
+          <div class="footer__nav-columns">
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">ARTIST</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">SYSTEM & PRICE</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">FAQ</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">GOODS</a></li>
+            </ul>
+            <ul class="footer__nav-list">
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">INTERVIEW</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">NEWS</a></li>
+              <li class="footer__nav-item"><a href="#" class="footer__nav-link">CONTACT</a></li>
+            </ul>
+          </div>
+        </nav>
 
-    <ul class="footer__links">
-      <li class="footer__links-item"><a href="#" class="footer__links-link">会社概要</a></li>
-      <li class="footer__links-item"><a href="#" class="footer__links-link">プライバシーポリシー</a></li>
-      <li class="footer__links-item"><a href="#" class="footer__links-link">特定商取引法に基づく表記</a></li>
-    </ul>
+        <ul class="footer__sns-list">
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link" aria-label="Instagram">
+              <img src="<?php echo IMAGEPATH; ?>/common/instagram-icon-white.webp" alt="Instagramのアイコン" width="55" height="55" loading="lazy" class="footer__sns-img">
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link" aria-label="YouTube">
+              <img src="<?php echo IMAGEPATH; ?>/common/youtube-icon-white.webp" alt="YouTubeのアイコン" width="55" height="55" loading="lazy" class="footer__sns-img">
+            </a>
+          </li>
+          <li class="footer__sns-item">
+            <a href="#" class="footer__sns-link" aria-label="LINE">
+              <img src="<?php echo IMAGEPATH; ?>/common/line-icon-white.webp" alt="LINEのアイコン" width="55" height="55" loading="lazy" class="footer__sns-img">
+            </a>
+          </li>
+        </ul>
+      </div>
 
-    <a href="<?php echo HOME_URL; ?>" class="footer__logo-wrap">
-      <img src="<?php echo IMAGEPATH; ?>/common/logo-white.svg" alt="Boogie Lineのロゴ" width="360" height="150" loading="lazy" class="footer__logo-img">
-    </a>
+      <div class="footer__middle">
+        <div class="footer__divider"></div>
+        <ul class="footer__legal-links">
+          <li class="footer__legal-item"><a href="#" class="footer__legal-link">運営会社</a></li>
+          <li class="footer__legal-item"><a href="#" class="footer__legal-link">プライバシーポリシー</a></li>
+          <li class="footer__legal-item"><a href="#" class="footer__legal-link">利用規則</a></li>
+          <li class="footer__legal-item"><a href="#" class="footer__legal-link">特定商取引法に基づく表示</a></li>
+        </ul>
+      </div>
+
+      <a href="<?php echo HOME_URL; ?>" class="footer__logo-wrap">
+        <img src="<?php echo IMAGEPATH; ?>/common/logo-white.svg" alt="Boogie Lineのロゴ" width="519" height="249" loading="lazy" class="footer__logo-img">
+      </a>
+    </div>
   </div>
 </footer>
 

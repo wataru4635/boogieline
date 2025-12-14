@@ -7,62 +7,6 @@
 
 <main>
 
-  <section class="opening" id="js-opening">
-    <video class="opening__bg" autoplay muted playsinline loop preload="auto">
-      <source src="<?php echo VIDEOPATH; ?>/opening-bg.mp4" type="video/mp4">
-    </video>
-
-    <div class="opening__center">
-      <img src="<?php echo IMAGEPATH; ?>/common/opening-title.svg" alt="BOOGIE LINE | BOOGIE UP YOUR MUSIC LIFE"
-        width="706" height="347" class="opening__logo">
-    </div>
-  </section>
-
-  <section class="fv">
-    <div class="fv__inner">
-      <p class="fv__kicker-pc">CONNECTING THROUGH MUSIC.</p>
-      <div class="fv__content">
-        <div class="fv__img-wrap">
-          <div class="fv__img-wrap-title">
-            <img src="<?php echo IMAGEPATH; ?>/common/logo-white.svg" alt="Boogie Lineのタイトルロゴ" width="289.37"
-              height="138.66" class="fv__img-title">
-          </div>
-
-          <div class="fv__img-wrap-character">
-            <img src="<?php echo IMAGEPATH; ?>/common/boogieline-character.svg" alt="ケーブルを巻いたキャラクターのイラスト" width="308.95"
-              height="295.8" class="fv__img-character">
-          </div>
-        </div>
-
-        <p class="fv__kicker">CONNECTING THROUGH MUSIC.</p>
-
-        <div class="fv__content-text-wrap">
-          <h2 class="fv__heading">
-            アーティストたちと<br class="u-mobile">音を通じて繋がろう
-          </h2>
-
-          <p class="fv__lead">
-            カルチャーを感じながら<br>
-            “生きた音”に出会える<br>
-            <span class="u-mobile">まったく新しい哲学で生まれた</span><br class="u-mobile">
-            レッスンレーベル
-          </p>
-
-          <div class="fv__link-wrap">
-            <a href="#" class="link-more link-more--fv">
-              → 詳しくはこちら
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="fv__link-register-wrap">
-        <a href="#" class="fv__link-register">
-          会員登録する
-        </a>
-      </div>
-    </div>
-  </section>
-
   <section class="pickup">
     <div class="pickup__inner inner">
       <h2 class="pickup__title section-title js-section-title-split">PICK&nbsp;UP</h2>

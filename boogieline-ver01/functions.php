@@ -10,6 +10,3 @@ require get_template_directory() . '/inc/security.php';
 
 // 定義
 require get_template_directory() . '/inc/defines.php';
-
-// オープニング
-require get_template_directory() . '/inc/opening.php';

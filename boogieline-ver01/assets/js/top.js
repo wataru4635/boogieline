@@ -71,21 +71,3 @@ const slider = new Swiper('.js-artist-loop-swiper', {
     }
   }
 });
-
-/* ===============================================
-# TOP：オープニング
-=============================================== */
-
-document.addEventListener('DOMContentLoaded', () => {
-  const root = document.documentElement;
-  const opening = document.getElementById('js-opening');
-  const FLAG = 'opening_played';
-  if (sessionStorage.getItem(FLAG)) return;
-  const endOpening = () => {
-    opening.classList.add('is-done');
-    root.classList.remove('is-opening');
-    setTimeout(() => opening.remove(), 800);
-  };
-  setTimeout(endOpening, 10000);
-  sessionStorage.setItem(FLAG, '1');
-});

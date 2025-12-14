@@ -17,20 +17,17 @@
       <div class="header__nav-wrap">
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="<?php echo HOME_URL; ?>" class="header__nav-link">アーティスト紹介</a></li>
-            <li class="header__nav-item"><a href="<?php echo HOME_URL; ?>" class="header__nav-link">レッスン料金</a></li>
-            <li class="header__nav-item"><a href="<?php echo HOME_URL; ?>" class="header__nav-link">ブギーラインとは</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">アーティスト紹介</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">レッスン料金</a></li>
+            <li class="header__nav-item"><a href="#" class="header__nav-link">ブギーラインとは</a></li>
           </ul>
         </nav>
       </div>
       <a href="<?php echo HOME_URL; ?>" class="header__logo-link">
         <?php $logo_tag = (is_front_page() || is_home()) ? 'h1' : 'div'; ?>
         <<?php echo esc_html($logo_tag); ?> class="header__logo">
-          <img src="<?php echo IMAGEPATH; ?>/common/logo.svg" alt="Boogie Lineのロゴ" class="header__logo-img header__logo-img--default" width="103.477" height="30" loading="eager" fetchpriority="high">
-          <?php if (is_front_page()): ?>
-          <img src="<?php echo IMAGEPATH; ?>/common/logo-white.svg" alt="" class="header__logo-img header__logo-img--white" width="103.477" height="30" loading="eager" aria-hidden="true">
-          <?php endif; ?>
-        </<?php echo esc_html($logo_tag); ?>>
+          <img src="<?php echo IMAGEPATH; ?>/common/logo.svg" alt="Boogie Lineのロゴ" class="header__logo-img" width="152" height="73" loading="eager" fetchpriority="high">
+        </<?php echo esc_html($logo_tag); ?>> 
       </a>
       <div class="header__right-link-wrap">
         <a href="#" class="header__my-page-link">
@@ -48,14 +45,14 @@
     <div class="header__pc-drawer pc-drawer">
       <div class="pc-drawer__content">
         <div class="pc-drawer__content-badge">
-          <img src="<?php echo IMAGEPATH; ?>/common/badge.webp" alt="BOOGIE LINE開設記念" width="103.477" height="30" class="pc-drawer__content-badge-img">
+          <img src="<?php echo IMAGEPATH; ?>/common/badge.webp" alt="BOOGIE LINE開設記念" width="210" height="212" class="pc-drawer__content-badge-img">
         </div>
         <div class="pc-drawer__content-left">
           <div class="pc-drawer__content-left-inner">
             <h2 class="pc-drawer__content-left-title">GOODS &amp; SHOP</h2>
             <p class="pc-drawer__lead">オリジナルグッズ、ローンチ予定！</p>
             <div class="pc-drawer__goods-img-wrap">
-              <img src="<?php echo IMAGEPATH; ?>/common/goods-items.webp" alt="BOOGIE LINEオリジナルグッズ" width="682" height="312" class="pc-drawer__goods-img">
+              <img src="<?php echo IMAGEPATH; ?>/common/goods-items.webp" alt="BOOGIE LINEオリジナルグッズ" width="684" height="312" class="pc-drawer__goods-img">
             </div>
             <div class="pc-drawer__goods-btn-wrap">
               <a href="#" class="pc-drawer__goods-btn">SHOPを見る</a>
@@ -65,7 +62,7 @@
         <div class="pc-drawer__content-right">
           <div class="pc-drawer__content-right-inner">
             <a href="<?php echo HOME_URL; ?>" class="pc-drawer__content-right-logo-link">
-              <img src="<?php echo IMAGEPATH; ?>/common/logo.svg" alt="Boogie Lineのロゴ" width="103.477" height="30" class="pc-drawer__content-right-logo-img">
+              <img src="<?php echo IMAGEPATH; ?>/common/logo.svg" alt="Boogie Lineのロゴ" width="193" height="92" class="pc-drawer__content-right-logo-img">
             </a>
             <div class="pc-drawer__nav">
               <ul class="pc-drawer__nav-list">
@@ -156,7 +153,7 @@
       <div class="sp-drawer__content">
         <div class="sp-drawer__content-inner">
           <div class="sp-drawer__content-logo-wrap">
-            <img src="<?php echo IMAGEPATH; ?>/common/large-logo.svg" alt="Boogie Lineのロゴ" width="103.477" height="30" class="sp-drawer__content-logo-img">
+            <img src="<?php echo IMAGEPATH; ?>/common/large-logo.svg" alt="Boogie Lineのロゴ" width="103" height="30" class="sp-drawer__content-logo-img">
           </div>
           <div class="sp-drawer__content-nav-wrap">
             <ul class="sp-drawer__content-nav-list">

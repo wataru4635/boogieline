@@ -36,7 +36,6 @@ const artistSliders = {};
 // 各スライダーを初期化
 document.querySelectorAll('.js-artist-swiper').forEach((swiperEl) => {
   const category = swiperEl.dataset.category;
-  console.log('Initializing swiper for category:', category);
   const config = {
     ...artistSwiperConfig,
     navigation: {
@@ -45,10 +44,7 @@ document.querySelectorAll('.js-artist-swiper').forEach((swiperEl) => {
     },
   };
   artistSliders[category] = new Swiper(swiperEl, config);
-  console.log('Swiper initialized for:', category);
 });
-
-console.log('All initialized sliders:', Object.keys(artistSliders));
 
 // カテゴリータブの切り替え
 const categoryLinks = document.querySelectorAll('.js-artist-category');
@@ -58,7 +54,6 @@ categoryLinks.forEach((link) => {
   link.addEventListener('click', (e) => {
     e.preventDefault();
     const targetCategory = link.dataset.category;
-    console.log('Category clicked:', targetCategory);
     
     categoryLinks.forEach((l) => l.classList.remove('is-active'));
     
@@ -69,20 +64,14 @@ categoryLinks.forEach((link) => {
     });
     
     const targetSwiper = document.querySelector(`.js-artist-swiper[data-category="${targetCategory}"]`);
-    console.log('Target swiper found:', targetSwiper);
     if (targetSwiper) {
       targetSwiper.setAttribute('aria-hidden', 'false');
       
       if (artistSliders[targetCategory]) {
-        console.log('Updating swiper for:', targetCategory);
         setTimeout(() => {
           artistSliders[targetCategory].update();
         }, 50);
-      } else {
-        console.error('Swiper not found for category:', targetCategory);
       }
-    } else {
-      console.error('Target swiper element not found for:', targetCategory);
     }
   });
 });

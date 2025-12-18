@@ -73,10 +73,6 @@ body.has-header {
 	margin-top: 4.6875rem;
 }
 
-.u-desktop {
-	display: none !important;
-}
-
 *,
 *::before,
 *::after {
@@ -216,10 +212,6 @@ button {
 	padding-left: 15px;
 	padding-right: 15px;
 	width: 100%;
-}
-
-.single {
-	margin-top: 4.6875rem;
 }
 
 .catch-the-groove {
@@ -2302,22 +2294,10 @@ body.has-header {
 	margin-top: 6.5625rem;
 }
 
-.u-hidden-md {
-	display: none !important;
-}
-
-.u-desktop {
-	display: inline !important;
-}
-
 .inner {
 	max-width: 1240px;
 	padding-left: 20px;
 	padding-right: 20px;
-}
-
-.single {
-	margin-top: 5.9375rem;
 }
 
 .catch-the-groove {
@@ -3112,7 +3092,7 @@ html {
 @media (min-width: 1440px) {
 
 .top-interview__slide {
-	width: clamp(320px, 320px + 60 * var(--fluid-basis-2), 380px);
+	width: clamp(320px, 320px + 40 * var(--fluid-basis-2), 360px);
 }
 
 }
@@ -3159,10 +3139,6 @@ html {
 }
 
 @media (max-width: 767px) {
-
-.u-hidden-sp {
-	display: none !important;
-}
 
 .flow__img-wrap {
 	margin-left: auto;

@@ -118,7 +118,7 @@
   }
 
   @media (min-width: 1440px) {
-    width: clamp(320px, calc(320px + 60 * var(--fluid-basis-2)), 380px);
+    width: clamp(320px, calc(320px + 40 * var(--fluid-basis-2)), 360px);
   }
 }
 

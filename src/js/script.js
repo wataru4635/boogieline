@@ -10,25 +10,20 @@ document.addEventListener('DOMContentLoaded', () => {
   if (hamburgerBtns.length > 0) {
     hamburgerBtns.forEach(btn => {
       btn.addEventListener('click', () => {
-        // PC/SPどちらかのドロワーが開いているかチェック
         const isOpen = (pcDrawer && pcDrawer.classList.contains('is-open')) || 
                        (spDrawer && spDrawer.classList.contains('is-open'));
 
         if (!isOpen) {
-          // 開く処理
           if (pcDrawer) pcDrawer.classList.add('is-open');
           if (spDrawer) spDrawer.classList.add('is-open');
           body.classList.add('is-hidden');
           
-          // すべてのハンバーガーボタンにis-openを追加
           hamburgerBtns.forEach(otherBtn => otherBtn.classList.add('is-open'));
         } else {
-          // 閉じる処理
           if (pcDrawer) pcDrawer.classList.remove('is-open');
           if (spDrawer) spDrawer.classList.remove('is-open');
           body.classList.remove('is-hidden');
           
-          // すべてのハンバーガーボタンからis-openを削除
           hamburgerBtns.forEach(otherBtn => otherBtn.classList.remove('is-open'));
         }
       });
@@ -77,6 +72,9 @@ document.addEventListener('DOMContentLoaded', () => {
   observeElements(".js-deco", "is-active", {
     rootMargin: getRootMargin("0px 0px -10% 0px", "0px 0px -5% 0px")
   });
+  observeElements(".js-flow-list", "is-active", {
+    rootMargin: getRootMargin("0px 0px -20% 0px", "0px 0px -10% 0px")
+  });
 })
 
   // =======================
@@ -87,14 +85,30 @@ document.addEventListener('DOMContentLoaded', () => {
       const text = element.textContent;
       element.setAttribute('aria-label', text);
       element.setAttribute('role', 'text');
-      element.textContent = '';
-      [...text].forEach((char, index) => {
-        const span = document.createElement('span');
-        span.textContent = char;
-        span.style.setProperty('--index', index);
-        span.setAttribute('aria-hidden', 'true');
-        element.appendChild(span);
+      
+      // 子ノードを処理
+      const fragment = document.createDocumentFragment();
+      let charIndex = 0;
+      
+      Array.from(element.childNodes).forEach(node => {
+        if (node.nodeType === Node.TEXT_NODE) {
+          // テキストノードの場合、各文字を <span> で囲む
+          [...node.textContent].forEach(char => {
+            const span = document.createElement('span');
+            span.textContent = char;
+            span.style.setProperty('--index', charIndex);
+            span.setAttribute('aria-hidden', 'true');
+            fragment.appendChild(span);
+            charIndex++;
+          });
+        } else if (node.nodeType === Node.ELEMENT_NODE) {
+          // 要素ノード（<br>など）の場合、そのまま追加
+          fragment.appendChild(node.cloneNode(true));
+        }
       });
+      
+      element.textContent = '';
+      element.appendChild(fragment);
     });
   }
   wrapTextInSpans(".js-text-split");

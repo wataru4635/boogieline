@@ -34,10 +34,12 @@
 
 .pc-drawer__content-badge {
   position: absolute;
-  top: min(calc((#{"95 * 100"} / var(--cq-ref) * 1cqw)), 95px);
+  top: min(calc((#{"117 * 100"} / var(--cq-ref) * 1cqw)), 127px);
   left: 47.2%;
   translate: -50% 0;
-  width: calc((#{"210 * 100"} / var(--cq-ref) * 1cqw));
+    width: calc(160 * 100 / var(--cq-ref) * 1cqw);
+    rotate: 21deg;
+
 }
 
 .pc-drawer__content-left-inner {
@@ -46,11 +48,12 @@
 
 .pc-drawer__content-left-title {
   text-align: center;
-  font-family: var(--font-family-third);
-  font-size: calc((#{"51 * 100"} / var(--cq-ref) * 1cqw));
+  font-family: var(--font-family-third) !important ;
+  font-size: calc((#{"51 * 100"} / var(--cq-ref) * 1cqw)) !important ;
   font-weight: var(--font-weight-semibold);
   letter-spacing: calc(4 / 51 * 1em);
   line-height: 1.07843;
+  margin-bottom: 0 !important;
 }
 
 .pc-drawer__lead {
@@ -164,6 +167,7 @@
   font-weight: var(--font-weight-semibold);
   line-height: 1;
   letter-spacing: calc(2 / 25 * 1em);
+  margin-bottom: 0 !important;
 }
 
 .pc-drawer__nav-title--artist {
@@ -177,8 +181,6 @@
   margin-top: calc((#{"9 * 100"} / var(--cq-ref) * 1cqw));
   line-height: 1;
 }
-
-.pc-drawer__nav-sub-item {}
 
 .pc-drawer__nav-sub-link {
   color: #A9ADB0;
@@ -205,6 +207,7 @@
   letter-spacing: calc(1 / 13 * 1em);
   margin-top: calc((#{"9 * 100"} / var(--cq-ref) * 1cqw));
   transition: color var(--duration-base) ease;
+  margin-bottom: 0 !important;
 }
 
 .pc-drawer__nav-pair-area {
@@ -213,8 +216,6 @@
   grid-template-columns: repeat(2, 1fr);
   row-gap: calc((#{"30 * 100"} / var(--cq-ref) * 1cqw));
 }
-
-.pc-drawer__nav-pair {}
 
 .pc-drawer__content-right-btn-wrap {
   margin-top: calc((#{"32 * 100"} / var(--cq-ref) * 1cqw));
@@ -237,6 +238,7 @@
   &::after {
     content: "→";
     position: absolute;
+    font-family: var(--font-family-base);
     top: 50%;
     translate: 0 -50%;
     right: calc((#{"13 * 100"} / var(--cq-ref) * 1cqw));

@@ -49,10 +49,6 @@ flex-direction: column;
 gap: rem(19);
 }
 
-.sp-drawer__content-nav-item {
-
-}
-
 .sp-drawer__content-nav-link {
   color: var(--white);
   font-family: var(--font-family-third);
@@ -67,10 +63,6 @@ display: grid;
 grid-template-columns: repeat(3, auto);
 row-gap: rem(5);
 margin-top: rem(6);
-}
-
-.sp-drawer__content-nav-sub-item {
-
 }
 
 .sp-drawer__content-nav-sub-link {
@@ -95,10 +87,6 @@ margin-top: rem(6);
 display: flex;
 gap: rem(21.7);
 margin-top: rem(25);
-}
-
-.sp-drawer__content-sns-item {
-
 }
 
 .sp-drawer__content-sns-link {

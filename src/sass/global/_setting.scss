@@ -2,11 +2,11 @@
 
 // インナー幅設定
 // コンテンツのインナー幅（最も共通の幅が多い部分）
-$inner: 1000px;
+$inner: 1200px;
 // ※キュンパス幅ではなくインナーの幅を指す
 
 // 余白
-$padding-pc: 35px;
+$padding-pc: 20px;
 $padding-sp: 15px;
 
 ////////////////////
@@ -61,7 +61,6 @@ $padding-sp: 15px;
   --z-index-to-top: 200;
   --z-index-drawer: 1000;
   --z-index-hamburger: 1001;
-  --z-index-modal: 10000;
 }
 
 ////////////////////
@@ -86,6 +85,7 @@ $padding-sp: 15px;
   --duration-fv: 0.7s;
 
   --ease-smooth-bounce: cubic-bezier(.48, .07, .33, .79);
+  --ease-out: cubic-bezier(.23, 1, .32, 1);
 }
 
 ////////////////////

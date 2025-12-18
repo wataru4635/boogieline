@@ -8,7 +8,7 @@
   <?php wp_head(); ?>
 </head>
 
-<body <?php body_class(); ?>>
+<body <?php body_class('has-header'); ?>>
 
   <!---------  header  --------->
 
@@ -17,9 +17,9 @@
       <div class="header__nav-wrap">
         <nav class="header__nav">
           <ul class="header__nav-list">
-            <li class="header__nav-item"><a href="#" class="header__nav-link">アーティスト紹介</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">レッスン料金</a></li>
-            <li class="header__nav-item"><a href="#" class="header__nav-link">ブギーラインとは</a></li>
+            <li class="header__nav-item"><a href="<?php echo ARTIST_URL; ?>" class="header__nav-link">アーティスト紹介</a></li>
+            <li class="header__nav-item"><a href="<?php echo SYSTEM_URL; ?>" class="header__nav-link">システム＆<br class="tablet-br">レッスン料金</a></li>
+            <li class="header__nav-item"><a href="<?php echo ABOUT_URL; ?>" class="header__nav-link">ブギーラインとは</a></li>
           </ul>
         </nav>
       </div>
@@ -30,7 +30,7 @@
         </<?php echo esc_html($logo_tag); ?>> 
       </a>
       <div class="header__right-link-wrap">
-        <a href="#" class="header__my-page-link">
+        <a href="<?php echo MYPAGE_URL; ?>" class="header__my-page-link">
           <span class="header__my-page-link-text">MY PAGE</span>
           <span class="header__my-page-link-icon">
             <img src="<?php echo IMAGEPATH; ?>/common/my-page-icon.svg" alt="MY PAGEのアイコン" width="29" height="28" loading="eager" fetchpriority="high" class="header__my-page-link-icon-img">
@@ -55,7 +55,7 @@
               <img src="<?php echo IMAGEPATH; ?>/common/goods-items.webp" alt="BOOGIE LINEオリジナルグッズ" width="684" height="312" class="pc-drawer__goods-img">
             </div>
             <div class="pc-drawer__goods-btn-wrap">
-              <a href="#" class="pc-drawer__goods-btn">SHOPを見る</a>
+              <a href="<?php echo GOODS_URL; ?>" class="pc-drawer__goods-btn">SHOPを見る</a>
             </div>
           </div>
         </div>
@@ -67,7 +67,7 @@
             <div class="pc-drawer__nav">
               <ul class="pc-drawer__nav-list">
                 <li class="pc-drawer__nav-item">
-                  <a href="#" class="pc-drawer__nav-link">
+                  <a href="<?php echo ARTIST_URL; ?>" class="pc-drawer__nav-link">
                     <p class="pc-drawer__nav-title pc-drawer__nav-title--artist">ARTIST</p>
                   </a>
                   <ul class="pc-drawer__nav-sub-list">
@@ -92,7 +92,7 @@
                   </ul>
                 </li>
                 <li class="pc-drawer__nav-item">
-                  <a href="#" class="pc-drawer__nav-link">
+                  <a href="<?php echo SYSTEM_URL; ?>" class="pc-drawer__nav-link">
                     <p class="pc-drawer__nav-title">SYSTEM &amp; PRICE</p>
                     <p class="pc-drawer__nav-text">システム＆レッスン料金</p>
                   </a>
@@ -100,25 +100,25 @@
               </ul>
               <ul class="pc-drawer__nav-pair-area">
                 <li class="pc-drawer__nav-pair">
-                  <a href="#" class="pc-drawer__nav-link">
+                  <a href="<?php echo FAQ_URL; ?>" class="pc-drawer__nav-link">
                     <p class="pc-drawer__nav-title">FAQ</p>
                     <p class="pc-drawer__nav-text">よくある質問</p>
                   </a>
                 </li>
                 <li class="pc-drawer__nav-pair">
-                  <a href="#" class="pc-drawer__nav-link">
+                  <a href="<?php echo INTERVIEW_URL; ?>" class="pc-drawer__nav-link">
                     <p class="pc-drawer__nav-title">INTERVIEW</p>
                     <p class="pc-drawer__nav-text">アーティストインタビュー</p>
                   </a>
                 </li>
                 <li class="pc-drawer__nav-pair">
-                  <a href="#" class="pc-drawer__nav-link">
+                  <a href="<?php echo GOODS_URL; ?>" class="pc-drawer__nav-link">
                     <p class="pc-drawer__nav-title">GOODS &amp; SHOP</p>
                     <p class="pc-drawer__nav-text">オリジナルグッズ紹介</p>
                   </a>
                 </li>
                 <li class="pc-drawer__nav-pair">
-                  <a href="#" class="pc-drawer__nav-link">
+                  <a href="<?php echo CONTACT_URL; ?>" class="pc-drawer__nav-link">
                     <p class="pc-drawer__nav-title">CONTACT</p>
                     <p class="pc-drawer__nav-text">お問い合わせ</p>
                   </a>
@@ -126,7 +126,7 @@
               </ul>
             </div>
             <div class="pc-drawer__content-right-btn-wrap">
-              <a href="#" class="pc-drawer__content-right-btn">会員登録する</a>
+              <a href="<?php echo REGISTER_URL; ?>" class="pc-drawer__content-right-btn">会員登録する</a>
             </div>
             <ul class="pc-drawer__content-right-sns-list">
               <li class="pc-drawer__content-right-sns-item">
@@ -158,7 +158,7 @@
           <div class="sp-drawer__content-nav-wrap">
             <ul class="sp-drawer__content-nav-list">
               <li class="sp-drawer__content-nav-item">
-                <a href="#" class="sp-drawer__content-nav-link">ARTIST</a>
+                <a href="<?php echo ARTIST_URL; ?>" class="sp-drawer__content-nav-link">ARTIST</a>
                 <ul class="sp-drawer__content-nav-sub-list">
                   <li class="sp-drawer__content-nav-sub-item">
                     <a href="#" class="sp-drawer__content-nav-sub-link">GUITAR</a>
@@ -181,23 +181,23 @@
                 </ul>
               </li>
               <li class="sp-drawer__content-nav-item">
-                <a href="#" class="sp-drawer__content-nav-link">SYSTEM &amp; PRICE</a>
+                <a href="<?php echo SYSTEM_URL; ?>" class="sp-drawer__content-nav-link">SYSTEM &amp; PRICE</a>
                 <p class="sp-drawer__content-nav-text">システム＆レッスン料金</p>
               </li>
               <li class="sp-drawer__content-nav-item">
-                <a href="#" class="sp-drawer__content-nav-link">FAQ</a>
+                <a href="<?php echo FAQ_URL; ?>" class="sp-drawer__content-nav-link">FAQ</a>
                 <p class="sp-drawer__content-nav-text">よくある質問</p>
               </li>
               <li class="sp-drawer__content-nav-item">
-                <a href="#" class="sp-drawer__content-nav-link">GOODS &amp; SHOP</a>
+                <a href="<?php echo GOODS_URL; ?>" class="sp-drawer__content-nav-link">GOODS &amp; SHOP</a>
                 <p class="sp-drawer__content-nav-text">オリジナルグッズ紹介</p>
               </li>
               <li class="sp-drawer__content-nav-item">
-                <a href="#" class="sp-drawer__content-nav-link">INTERVIEW</a>
+                <a href="<?php echo INTERVIEW_URL; ?>" class="sp-drawer__content-nav-link">INTERVIEW</a>
                 <p class="sp-drawer__content-nav-text">アーティストインタビュー</p>
               </li>
               <li class="sp-drawer__content-nav-item">
-                <a href="#" class="sp-drawer__content-nav-link">CONTACT</a>
+                <a href="<?php echo CONTACT_URL; ?>" class="sp-drawer__content-nav-link">CONTACT</a>
                 <p class="sp-drawer__content-nav-text">お問い合わせ</p>
               </li>
             </ul>
@@ -220,7 +220,7 @@
             </li>
           </ul>
           <div class="sp-drawer__content-btn-wrap">
-            <a href="#" class="sp-drawer__content-btn">会員登録する</a>
+            <a href="<?php echo REGISTER_URL; ?>" class="sp-drawer__content-btn">会員登録する</a>
           </div>
         </div>
       </div>

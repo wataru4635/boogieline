@@ -21,9 +21,12 @@
   padding-inline: rem(17);
 
   @include mq('md') {
-    padding-inline: clamp(10px, calc(10px + 110 * var(--fluid-basis)), 120px);
+    padding-inline: clamp(10px, calc(10px + 50 * var(--fluid-basis)), 60px);
     margin-inline: auto;
   }
+@include mq('xl') {
+ padding-inline: clamp(60px, calc(60px + 60 * var(--fluid-basis-2)), 120px);
+}
 }
 
 .header__nav-wrap {
@@ -32,7 +35,6 @@
   @include mq('md') {
     display: flex;
     align-items: center;
-    gap: rem(47);
   }
 }
 
@@ -49,7 +51,7 @@
 }
 
 .header__nav-link {
-  font-size: clamp(10px, calc(10px + 6 * var(--fluid-basis)), 16px);
+  font-size: clamp(9px, calc(9px + 7 * var(--fluid-basis)), 16px);
   font-weight: var(--font-weight-semibold);
   font-family: var(--font-family-third);
   line-height: 1.6875;
@@ -57,6 +59,7 @@
   text-transform: uppercase;
   transition: color var(--duration-base) ease;
   position: relative;
+text-align: center;
 
   @media (any-hover: hover) {
     &:hover {
@@ -152,7 +155,10 @@
 
   @include mq('md') {
     width: clamp(100px, calc(100px + 52 * var(--fluid-basis)), 152px);
-    margin-inline: clamp(33px, calc(33px + 60 * var(--fluid-basis)), 93px) clamp(150px, calc(150px + 60 * var(--fluid-basis)), 270px);
+    margin-inline: clamp(30px, calc(30px + 30 * var(--fluid-basis)), 60px) clamp(112px, calc(112px + 100 * var(--fluid-basis)), 212px);
+  }
+  @media (min-width: 1251px) {
+    margin-inline: clamp(10px, calc(10px + 10 * var(--fluid-basis)), 20px) clamp(172px, calc(172px + 100 * var(--fluid-basis)), 272px);
   }
 
   @media (any-hover: hover) {

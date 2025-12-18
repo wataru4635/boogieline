@@ -83,3 +83,12 @@ $mediaquerys: (
     }
   }
 }
+
+.tablet-br {
+  @media (max-width: 1250px) {
+    display: block;
+  }
+  @media (min-width: 1251px) {
+    display: none;
+  }
+}

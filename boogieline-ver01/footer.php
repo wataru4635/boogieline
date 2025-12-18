@@ -5,15 +5,14 @@
         <nav class="footer__nav">
           <div class="footer__nav-columns">
             <ul class="footer__nav-list">
-              <li class="footer__nav-item"><a href="#" class="footer__nav-link">ARTIST</a></li>
-              <li class="footer__nav-item"><a href="#" class="footer__nav-link">SYSTEM & PRICE</a></li>
-              <li class="footer__nav-item"><a href="#" class="footer__nav-link">FAQ</a></li>
-              <li class="footer__nav-item"><a href="#" class="footer__nav-link">GOODS</a></li>
+              <li class="footer__nav-item"><a href="<?php echo ARTIST_URL; ?>" class="footer__nav-link">ARTIST</a></li>
+              <li class="footer__nav-item"><a href="<?php echo SYSTEM_URL; ?>" class="footer__nav-link">SYSTEM &amp; PRICE</a></li>
+              <li class="footer__nav-item"><a href="<?php echo FAQ_URL; ?>" class="footer__nav-link">FAQ</a></li>
             </ul>
             <ul class="footer__nav-list">
-              <li class="footer__nav-item"><a href="#" class="footer__nav-link">INTERVIEW</a></li>
-              <li class="footer__nav-item"><a href="#" class="footer__nav-link">NEWS</a></li>
-              <li class="footer__nav-item"><a href="#" class="footer__nav-link">CONTACT</a></li>
+              <li class="footer__nav-item"><a href="<?php echo GOODS_URL; ?>" class="footer__nav-link">GOODS &amp; SHOP</a></li>
+              <li class="footer__nav-item"><a href="<?php echo INTERVIEW_URL; ?>" class="footer__nav-link">INTERVIEW</a></li>
+              <li class="footer__nav-item"><a href="<?php echo CONTACT_URL; ?>" class="footer__nav-link">CONTACT</a></li>
             </ul>
           </div>
         </nav>
@@ -40,10 +39,9 @@
       <div class="footer__middle">
         <div class="footer__divider"></div>
         <ul class="footer__legal-links">
-          <li class="footer__legal-item"><a href="#" class="footer__legal-link">運営会社</a></li>
-          <li class="footer__legal-item"><a href="#" class="footer__legal-link">プライバシーポリシー</a></li>
-          <li class="footer__legal-item"><a href="#" class="footer__legal-link">利用規則</a></li>
-          <li class="footer__legal-item"><a href="#" class="footer__legal-link">特定商取引法に基づく表示</a></li>
+          <li class="footer__legal-item"><a href="<?php echo COMPANY_URL; ?>" class="footer__legal-link">運営会社</a></li>
+          <li class="footer__legal-item"><a href="<?php echo PRIVACY_URL; ?>" class="footer__legal-link">プライバシーポリシー</a></li>
+          <li class="footer__legal-item"><a href="<?php echo TOKUSHOHO_URL; ?>" class="footer__legal-link">特定商取引法に基づく表示</a></li>
         </ul>
       </div>
 

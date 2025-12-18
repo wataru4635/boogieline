@@ -41,9 +41,29 @@
   }
 }
 
-body {
+body.has-header {
   margin-top: rem(75);
   @include mq('md') {
     margin-top: rem(105);
+  }
+}
+
+// Utility classes
+.u-hidden-md {
+  @include mq('md') {
+    display: none !important;
+  }
+}
+
+.u-hidden-sp {
+  @media (max-width: 767px) {
+    display: none !important;
+  }
+}
+
+.u-desktop {
+  display: none !important;
+  @include mq('md') {
+    display: inline !important;
   }
 }

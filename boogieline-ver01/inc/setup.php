@@ -24,7 +24,7 @@ function enqueue_custom_scripts() {
     };
 
     // トップページ専用JS・CSS
-    if (is_front_page()) {
+    if (is_front_page() || is_404()) {
         // Swiper JS
         $swiper_js = '/js/swiper-bundle.min.js';
         wp_enqueue_script(
@@ -54,7 +54,7 @@ function enqueue_custom_scripts() {
         );
     }
 
-    // CSS（共通）- 最後に読み込む
+    // CSS（共通）
     $style_file = '/css/style.css';
     wp_enqueue_style(
         'common-style',
@@ -63,7 +63,7 @@ function enqueue_custom_scripts() {
         $get_ver("{$theme_path}/assets{$style_file}")
     );
 
-    // JS（共通）- 最後に読み込む
+    // JS（共通）
     $script_file = '/js/script.js';
     wp_enqueue_script(
         'common-script',
@@ -118,20 +118,12 @@ add_action('wp_head', 'enqueue_preload_headers');
 // 不要な head内のタグやスクリプトを削除する関数
 // ==========================================================================
 function codeups_clean_up_head() {
-    // WordPressのバージョン情報を削除（セキュリティ対策）
     remove_action('wp_head', 'wp_generator');
-
-    // 絵文字関連のスクリプトとスタイルを削除（パフォーマンス向上）
     remove_action('wp_head', 'print_emoji_detection_script', 7);
     remove_action('wp_print_styles', 'print_emoji_styles');
-
-    // 外部ツールとの連携用の不要なタグを削除（セキュリティ・軽量化）
     remove_action('wp_head', 'rsd_link');
     remove_action('wp_head', 'wlwmanifest_link');
-
-    // 追加フィードリンクを削除（必要な場合は残す）
     remove_action('wp_head', 'feed_links_extra', 3);
   }
 
-  // テーマが読み込まれた後に実行
   add_action('after_setup_theme', 'codeups_clean_up_head');

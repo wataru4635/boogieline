@@ -1,16 +1,17 @@
-@use "global" as *;
+@use "global"as *;
 
 .section-title {
-  font-family: var(--font-family-third);
   text-align: center;
-  font-size: rem(35);
+  font-family: var(--font-family-third);
+  font-size: rem(40);
   font-weight: var(--font-weight-semibold);
-  line-height: 0.77143;
-  letter-spacing: calc(1 / 35 * 1em);
+  line-height: 0.675;
+  letter-spacing: calc(1 / 40 * 1em);
+
   @include mq('md') {
-    font-size: rem(55);
-    line-height: 1;
-    letter-spacing: calc(1 / 55 * 1em);
+    font-size: rem(75);
+    line-height: 0.73333;
+    letter-spacing: calc(4 / 75 * 1em);
   }
 }
 
@@ -31,14 +32,17 @@
     opacity: 0;
     transform: translateY(25px) scale(1);
   }
+
   40% {
     opacity: 1;
     transform: translateY(-8px) scale(1.1);
   }
+
   70% {
     transform: translateY(3px) scale(0.98);
     opacity: 1;
   }
+
   100% {
     transform: translateY(0) scale(1);
     opacity: 1;

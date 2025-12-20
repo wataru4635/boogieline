@@ -836,7 +836,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
@@ -849,7 +850,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
@@ -862,7 +864,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
@@ -875,7 +878,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
@@ -888,7 +892,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
@@ -901,7 +906,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
@@ -914,7 +920,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
@@ -927,7 +934,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
@@ -940,7 +948,8 @@
               </div>
               <div class="top-interview-card__body">
                 <p class="top-interview-card__date">2025.07.30</p>
-                <h3 class="top-interview-card__title">インタビューを公開しました！<br>竹村郁哉（yogee new waves）</h3>
+                <h3 class="top-interview-card__title">インタビューを公開しました！</h3>
+                <p class="top-interview-card__name">竹村郁哉（yogee new waves）</p>
               </div>
             </a>
           </li>
